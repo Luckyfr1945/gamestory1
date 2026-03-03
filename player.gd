@@ -1,14 +1,12 @@
 extends Area2D
 
-@export var kecepatan = 300.0
+@export var kecepatan = 90.0
 var screen_size
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	
-	pass # Replace with function body.
 
-
+pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO
@@ -33,7 +31,7 @@ func _process(delta: float) -> void:
 	position = position.clamp(Vector2.ZERO, screen_size)
 	
 	if velocity.x != 0 :
-		$AnimatedSprite2D.animation = "kanan"
+		$AnimatedSprite2D.animation = "kiri"
 		$AnimatedSprite2D.flip_v = false
 		$AnimatedSprite2D.flip_h = velocity.y < 0
 		
@@ -41,7 +39,3 @@ func _process(delta: float) -> void:
 			$AnimatedSprite2D.flip_h = true
 		else :
 			$AnimatedSprite2D.flip_h = false
-		
-		
-		
-		

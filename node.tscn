@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://fvh6cl2yk06u"]
+
+[ext_resource type="PackedScene" uid="uid://bdna8vbqon68e" path="res://canvas_layer.tscn" id="1_j2q8x"]
+[ext_resource type="PackedScene" uid="uid://c746f6wcn6bvu" path="res://player.tscn" id="2_112p8"]
+
+[node name="Node" type="Node" unique_id=1312448610]
+
+[node name="TileMap" parent="." unique_id=125443206 instance=ExtResource("1_j2q8x")]
+
+[node name="player" parent="." unique_id=1767295031 instance=ExtResource("2_112p8")]
+kecepatan = 90.0

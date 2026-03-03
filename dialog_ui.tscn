@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://da6y48k41vtgw"]
+
+[ext_resource type="Script" uid="uid://d0pcvsc7kjoyx" path="res://dialog_ui.gd" id="1_ewnsd"]
+
+[node name="DialogUI" type="Control" unique_id=37907112]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ewnsd")
+
+[node name="Panel" type="Panel" parent="." unique_id=1786985733]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1411913907]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label2" type="Label" parent="Panel" unique_id=96416745]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Button" type="Button" parent="." unique_id=2098593194]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

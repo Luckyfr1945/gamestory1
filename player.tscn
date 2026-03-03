@@ -22,8 +22,34 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("11_qtqh7")
+}, {
+"duration": 1.0,
 "texture": ExtResource("2_q13i1")
 }, {
+"duration": 1.0,
+"texture": ExtResource("12_2wuci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_iruf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j5n4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_634y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_efrwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hiqhm")
+}],
+"loop": true,
+"name": &"kanan",
+"speed": 7.5
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_pylmc")
 }, {
@@ -49,37 +75,8 @@ animations = [{
 "texture": ExtResource("10_7hik5")
 }],
 "loop": true,
-"name": &"kanan",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_qtqh7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_q13i1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_2wuci")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_iruf7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_j5n4i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_634y6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_efrwb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_hiqhm")
-}],
-"loop": true,
 "name": &"kiri",
-"speed": 5.0
+"speed": 7.5
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hl5qd"]
@@ -87,15 +84,18 @@ radius = 6.0
 height = 20.869999
 
 [node name="player" type="Area2D" unique_id=1767295031]
-position = Vector2(585, 323)
+position = Vector2(63, 4)
 script = ExtResource("1_op7ga")
+kecepatan = null
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=499078630]
 sprite_frames = SubResource("SpriteFrames_tkwlq")
 animation = &"kanan"
-frame_progress = 0.99894106
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=561119091]
 position = Vector2(0, 5.565)
 shape = SubResource("CapsuleShape2D_hl5qd")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=382485278]
+zoom = Vector2(2, 2)
