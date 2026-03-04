@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bwg8m7sr74gbu"]
+
+[ext_resource type="Script" uid="uid://dbawefmq57jp6" path="res://choicebutton.gd" id="1_myvx1"]
+
+[node name="choicebutton" type="Button" unique_id=1789283400]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "yes"
+script = ExtResource("1_myvx1")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
