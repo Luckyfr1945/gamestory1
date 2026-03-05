@@ -5,9 +5,10 @@ extends Node2D
 var choice_buttons: Array[Button] = []
 
 func _ready() -> void:
-	add_choice("yes")
-	add_choice("no")
-	add_choice("maybe")
+	#add_choice("yes")
+	#add_choice("no")
+	#add_choice("maybe")
+	pass
 
 func clear_dialog_box():
 	$VBoxContainer/Label.text = ""
@@ -30,4 +31,5 @@ func add_choice(choice_text: String):
 	
 func _on_choice_selected(choice_index: int):
 	print(choice_index)
+	($"../EzDialogue" as EzDialogue).next(choice_index)
 	pass
